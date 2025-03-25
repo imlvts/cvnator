@@ -1,3 +1,4 @@
+name: Deploy cv to github pages
 on:
   push:
     branches: [$default-branch]
