@@ -2,3 +2,9 @@ body {
     max-width: 800px;
     margin: auto;
 }
+.technologies>span {
+/*    background: #dddddd;
+    padding: 3px 5px;
+    border-radius: 4px;
+    display: inline-block;*/
+}

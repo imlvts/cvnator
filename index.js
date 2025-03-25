@@ -8,25 +8,21 @@ header = ({ name, label }) =>
         ["h2", 0, label],
     ],
 icon = (name) =>
-    ["span", {className: `icon icon-${name}`}],
-about = (bas) =>
-    ["div", {className: "about"},
+    ["span", {class: `icon icon-${name}`}],
+about = ({location, email, phone, url, profiles}) =>
+    ["div", {class: "about"},
         ["h3", 0, "About"],
         ["dl", 0,
-            bas.location?.city && ["div", 0,
-                icon("location"),
-                bas.location.city],
-            bas.email && ["div", 0,
-                icon("mail"),
-                ["a", {href: "mailto:" + bas.email}, bas.email]],
-            bas.phone && ["div", 0,
-                icon("phone"),
-                ["a", {href: "tel:" + bas.phone}, bas.phone]],
-            bas.url && ["div", 0,
-                icon("globe"),
-                ["a", {href: bas.url}, cleanUrl(bas.url)]],
-            bas.profiles && ["!fragment", 0,
-                ...bas.profiles.map((prof) =>
+            location?.city && ["div", 0,
+                icon("location"), location.city],
+            email && ["div", 0,
+                icon("mail"), ["a", {href: "mailto:" + email}, email]],
+            phone && ["div", 0,
+                icon("phone"), ["a", {href: "tel:" + phone}, phone]],
+            url && ["div", 0,
+                icon("globe"), ["a", {href: url}, cleanUrl(url)]],
+            profiles && ["!fragment", 0,
+                ...profiles.map((prof) =>
                     ["div", 0,
                         icon(prof.network),
                         ["a", {href: prof.url}, prof.username],
@@ -36,7 +32,7 @@ about = (bas) =>
     ],
 skills = (skills) => null,
 languages = (languages) =>
-    ["div", {className: "languages"},
+    ["div", {class: "languages"},
         ["h3", 0, "Languages"],
         ["dl", 0,
             ...languages.map(({ language, fluency }) =>
@@ -47,36 +43,42 @@ languages = (languages) =>
         ]
     ],
 leftColumn = (data) =>
-    ["aside", {className: "leftColumn"},
+    ["aside", {class: "leftColumn"},
         about(data.basics),
         skills(data.skills),
         languages(data.languages),
     ],
 dateRange = (start, end) =>
-    ["div", {className: "date-range"},
+    ["div", {class: "date-range"},
         monthFmt(start), "—", monthFmt(end)
     ],
 jobs = (jobs) => jobs.map((job) =>
-    ["section", {className: "job"},
+    ["section", {class: "job"},
         ["h4", 0,
             ["span", 0, job.position],
             " at ",
             ["span", 0, job.name]],
-        job.url && ["a", {href: job.url}, cleanUrl(job.url)],
         dateRange(job.startDate, job.endDate),
+        job.url && ["a", {href: job.url}, cleanUrl(job.url)],
         ["p", 0, job.summary],
-        ["ul", 0, ...job.highlights.map((hl) => ["li", 0, hl])],
+        ["ul", {class: "highlights"},
+            ...job.highlights.map((hl) => ["li", 0, hl])],
     ]),
 projects = (projects) => projects.map((proj) =>
-    ["section", {className: "project"},
+    ["section", {class: "project"},
         ["h4", {id: proj.id}, proj.name],
-        proj.url && ["a", {href: proj.url}, cleanUrl(proj.url)],
         dateRange(proj.startDate, proj.endDate),
+        proj.url && ["a", {href: proj.url}, cleanUrl(proj.url)],
         ["p", 0, proj.description],
-        ["ul", 0, ...proj.highlights.map((hl) => ["li", 0, hl])],
+        ["ul", {class: "highlights"},
+            ...proj.highlights.map((hl) => ["li", 0, hl])],
+        ["h5", 0, "Technologies"],
+        ["span", {class: "technologies"},
+            ...proj.technologies.map((tech, ii) =>
+                ["!fragment", 0, ii > 0 && ", ", ["span", 0, tech]])],
     ]),
 rightColumn = (data) =>
-    ["div", {className: "rightColumn"},
+    ["div", {class: "rightColumn"},
         ["h3", 0, "Summary"],
         ["p", 0, data.basics.summary],
         ["h3", 0, "Experience"],
@@ -96,15 +98,18 @@ render = (data) => {
     ];
 
     document.title = data.basics.name + " CV";
-    const root = $("#root");
-    root.innerHTML = "";
-    renderDOM(vdom, root);
+    renderDOM(vdom, document.body);
 },
 tailor = (data, params) => {
+    data.projects.sort((a, b) => -dateCmp(a.startDate, b.startDate));
+    data.work.sort((a, b) => -dateCmp(a.startDate, b.startDate));
+
     const tailor = params.get("tailor");
+
     if (!tailor || !has(data.tailor, tailor)) {
         return;
     }
+
     const { summary, projects } = data.tailor[tailor];
     checkSubset(projects, data.projects.map((proj) => proj.id));
     data.basics.summary = summary;
@@ -112,8 +117,6 @@ tailor = (data, params) => {
 },
 main = () => {
     const data = JSON.parse($("#data").textContent);
-    data.projects.sort((a, b) => -dateCmp(a.startDate, b.startDate));
-    data.work.sort((a, b) => -dateCmp(a.startDate, b.startDate));
     const params = new URLSearchParams(location.search);
     tailor(data, params);
     render(data);

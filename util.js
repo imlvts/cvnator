@@ -7,7 +7,7 @@ checkSubset = (a, b) => {
         console.error("not a subset", a, b);
     }
 },
-months = [
+MONTHS = [
     "January", "February", "March", "April", "May", "June",
     "July", "August", "September", "October", "November", "December",
 ],
@@ -17,7 +17,7 @@ monthFmt = (str) => {
     }
     const date = new Date(str);
     const year = date.getYear() + 1900;
-    return months[date.getMonth()] + " " + year;
+    return MONTHS[date.getMonth()] + " " + year;
 },
 CLEAN_URL_RE = new RegExp("^https?://(www\\.)?|/+$", "g"),
 cleanUrl = (url) => url.replace(CLEAN_URL_RE, ""),
@@ -27,10 +27,11 @@ dateCmp = (a, b) => {
     return ((a < b) ? -1 : ((a > b) ? 1 : 0));
 },
 renderDOM = (obj, target) => {
+    if (obj == null || obj === false) {
+        return;
+    }
     let dom;
-    if (obj == null || dom === false) {
-        dom = null;
-    } else if (typeof obj === "string") {
+    if (typeof obj === "string") {
         dom = new Text(obj);
     } else if (Array.isArray(obj)) {
         if (obj[0] === "!comment") {
