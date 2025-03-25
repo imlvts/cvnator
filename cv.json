@@ -1,0 +1,442 @@
+{
+    "__comment": "yes I'm tailoring my CV to different groups. boo hoo.",
+    "tailor": {
+        "embedded": {
+            "summary": "Seasoned developer with a knack for hitting the ground running, delivering optimized solutions in Rust and C for hardware-constrained systems. Excel at crafting custom drivers, parsing protocols, and fine-tuning performance. Among other things, slashing render times, racing the beam, while thriving in collaborative design discussions. Proven record across diverse area of engineering, including embedded and aerospace. Foll of passion for bridging low-level complexity and real-world reliability.",
+            "projects": ["esp-gps-clock", "freeasterix-codec", "aed-review", "oculus-tls-snoop", "mischief-re", "coccoc-browser", "refterm-hash-break", "woscope"]
+        },
+        "backend": {
+            "summary": "Versatile backend engineer who adapts fast, diving into complex systems to deliver robust, scalable solutions. Ready to show results on day one. Specialize in modernizing legacy code, optimizing performance, and building resilient APIs with Python, Node.js, and C#. Favor pragmatic problem-solving over blame, excelling in team settings to architect and refine backend designs that power everything from financial hubs to configuration consoles.",
+            "projects": ["backup-web-console", "deal-management-sys", "travel-front-page", "fintech-services", "coccoc-browser"]
+        },
+        "fintech": {
+            "summary": "Fintech-focused developer with a knack for rapid adaptation, delivering high-impact solutions like slashing treasury workflows from days to minutes, modernizing legacy financial pipelines, and boosting conversion rates by 15%. Specialize in optimizing performance, ensuring data integrity, and building tools for investment tracking and compliance. Thrive in teams, driving pragmatic fixes and design decisions across Python, C#, and Rust-powered systems for equity firms, treasuries, and client platforms.",
+            "projects": ["fintech-services", "deal-management-sys", "autozvit", "travel-front-page", "backup-web-console", "substrate-blockchain"]
+        },
+        "blockchain": {
+            "summary": "Fintech-savvy blockchain developer with a talent for rapid adaptation, delivering secure, high-throughput solutions from the jump. Excel at crafting smart contracts, integrating KYC on-chain, and pushing performance boundaries, rooted in Rust and financial system expertise. Thrive in teams, driving design decisions to fuse blockchain innovation with practical fintech needs.",
+            "projects": ["substrate-blockchain", "fintech-services", "deal-management-sys", "autozvit", "freeasterix-codec"]
+        }
+    },
+    "basics": {
+        "name": "Igor Malovitsa",
+        "label": "Software Engineer, Mentor, CTO",
+        "image": "https://avatars.githubusercontent.com/u/19667888?v=4&size=256",
+        "email": "igor.malovitsa@gmail.com",
+        "phone": null,
+        "url": "https://imlvts.github.io/",
+        "summary": "Seasoned developer with a proven track record of rapidly adapting to diverse, high-stakes projects, often delivering impactful contributions from day one. Excel at solving complex problems—whether reverse-engineering proprietary protocols, optimizing performance from seconds to milliseconds, or modernizing legacy code—while maintaining a pragmatic, solution-first mindset over finger-pointing. Thrive in collaborative environments, bringing a keen eye for design decisions and a passion for discussing trade-offs to elevate team outcomes. Demonstrated versatility across 20+ projects, spanning embedded systems, game dev, and security research, with a flair for turning chaos into clarity under tight deadlines.",
+        "location": {
+            "address": null,
+            "postalCode": null,
+            "city": "San Antonio",
+            "countryCode": "US",
+            "region": "Texas"
+        },
+        "profiles": [
+            {
+                "network": "LinkedIn",
+                "username": "igor-malovitsa",
+                "url": "https://www.linkedin.com/in/igor-malovitsa/"
+            },
+            {
+                "network": "Discord",
+                "username": "@wizord.tv",
+                "url": "https://discordapp.com/users/127706628194566144"
+            }
+        ]
+    },
+    "skills": [],
+    "work": [
+        {
+            "name": "WebDev freelancing",
+            "position": "Full Stack Developer",
+            "url": null,
+            "startDate": "2010-01-01",
+            "endDate": "2012-03-01",
+            "summary": "",
+            "location": "Kharkiv, Ukraine",
+            "highlights": [
+                "JS front end Development",
+                "Back End development",
+                "Created Reliable integrations with diverse set of APIs",
+                "Direct client communication",
+                "Maintaining infrastructure"
+            ]
+        },
+        {
+            "name": "OTP Bank",
+            "position": "Helpdesk",
+            "url": "https://www.otpbank.com.ua/",
+            "startDate": "2012-03-01",
+            "endDate": "2012-08-01",
+            "summary": "",
+            "location": "Kharkiv, Ukraine",
+            "highlights": []
+        },
+        {
+            "name": "GlobalLogic",
+            "position": "Full Stack Developer",
+            "url": "https://www.globallogic.com/",
+            "startDate": "2013-04-01",
+            "endDate": "2015-02-01",
+            "summary": "Well known international outsourcing/oustaﬃng company",
+            "location": "Kharkiv, Ukraine",
+            "highlights": [
+                "Web Front End development",
+                "Qt UI development",
+                "Back End development"
+            ]
+        },
+        {
+            "name": "Cốc Cốc",
+            "position": "Full Stack Developer",
+            "url": "https://coccoc.com/",
+            "startDate": "2015-08-01",
+            "endDate": "2015-10-01",
+            "summary": "The largest search and browser provider in Vietnam",
+            "location": "Hanoi, Vietnam",
+            "highlights": [
+                "Web Front End development",
+                "Qt UI development",
+                "Back End development"
+            ]
+        },
+        {
+            "name": "DataArt",
+            "position": "Senior Software Developer",
+            "url": "https://www.dataart.com/",
+            "startDate": "2016-04-16",
+            "endDate": "2024-09-21",
+            "summary": "Well known international outsourcing/oustaﬃng company",
+            "location": "San Antonio, TX",
+            "highlights": [
+                "Conducted Discovery process",
+                "Interviewed about 100 people for hiring",
+                "Designed, discussed & implemented architecture for projects",
+                "By own initiative, found fixed a bug, improving user retention by 5%",
+                "Leading Software development teams"
+            ]
+        },
+        {
+            "name": "Out of the Box Systems",
+            "position": "CTO",
+            "url": "http://obox.systems/",
+            "startDate": "2024-09-22",
+            "endDate": null,
+            "summary": "An outsourcing/oustaﬃng company",
+            "location": "San Antonio, TX",
+            "highlights": [
+                "Conducted Discovery process",
+                "Interviewed people for hiring",
+                "Designed, discussed & implemented architecture for projects"
+            ]
+        }
+    ],
+    "volunteer": [
+        {
+            "organization": "Ukrainian Rust Community",
+            "position": "Cofounder, Mentor, Speaker",
+            "url": "https://uarust.com/",
+            "startDate": "2021-09-01",
+            "endDate": null,
+            "summary": "",
+            "highlights": []
+        }
+    ],
+    "education": [
+        {
+            "institution": "V. N. Karazin Kharkiv National University",
+            "url": "https://karazin.ua/en/",
+            "area": "Experimental nuclear and plasma physics",
+            "studyType": "Master",
+            "startDate": "2008-09-01",
+            "endDate": "2012-05-01",
+            "score": "3.7",
+            "courses": []
+        }
+    ],
+    "languages": [
+        {
+            "language": "English",
+            "fluency": "Advanced High"
+        },
+        {
+            "language": "Ukrainian",
+            "fluency": "Native"
+        },
+        {
+            "language": "Russian",
+            "fluency": "Native"
+        }
+    ],
+    "projects": [
+        {
+            "id": "autozvit",
+            "name": "Treasury Reporting Tool",
+            "startDate": "2008-06-01",
+            "endDate": "2008-08-31",
+            "description": "Created a reporting tool for the Treasury of Ukraine to generate financial reports and pinpoint elusive data discrepancies, slashing a day-long manual process to 3 minutes from June to August 2008. Engineered the solution solo using Perl, dBase, and SQLite, crafting precise SQL queries to expose error sources within a CLI-driven workflow. Mastered the complexity of discrepancy detection, delivering a fast, reliable utility that transformed government data validation.",
+            "highlights": [
+                "Reduced discrepancy detection from 1 day to 3 minutes",
+                "Expressed complex error detection logic in SQL",
+                "Built CLI tool for Ukrainian Treasury"
+            ],
+            "url": "https://github.com/m1el/autozvit",
+            "technologies": ["Perl", "dBase", "SQLite", "SQL"]
+        },
+        {
+            "id": "backup-web-console",
+            "name": "Backup and Recovery Web Console",
+            "startDate": "2013-04-01",
+            "endDate": "2014-05-01",
+            "description": "Developed a web-based backup and recovery console for a globally recognized backup provider, replacing a legacy desktop system and eliminating client-side setup, reducing configuration time by approximately 90%. Designed a responsive, real-time UI with JavaScript, SenchaJS, CSS, and SCSS, and built a scalable Python and Flask backend with RESTful APIs. Overcame complex integration challenges by interfacing with an undocumented proprietary binary protocol and mapped intricate entity relationships to accurately display backup resource hierarchies. Delivered reusable components adopted by other teams, saving an estimated two weeks of development time. Collaborated with a team of four developers, contributing both frontend and backend expertise.",
+            "highlights": [
+                "Eliminated client desktop setup, reducing configuration time by ~90%",
+                "Created reusable components, saving other teams ~2 weeks of dev time",
+                "Integrated with an undocumented proprietary binary protocol"
+            ],
+            "url": null,
+            "technologies": ["JavaScript", "SenchaJS", "CSS", "SCSS", "Python", "Flask", "C++", "XML", "REST"]
+        },
+        {
+            "id": "aed-review",
+            "name": "AED Report Review Application",
+            "startDate": "2014-05-01",
+            "endDate": "2015-01-01",
+            "description": "Developed a desktop/tablet application enabling doctors to access and review Automated External Defibrillator (AED) reports, providing previously unavailable usage data critical for patient care. Built the solution using Qt5, QML, and OpenGL for an optimized UI with precise screen resolution calibration, and integrated a SOAP API for secure data retrieval. Overcame challenges in securing comprehensive test data to ensure reliability and achieved healthcare certification under strict regulatory standards. Contributed across the stack, including cryptographic log certification and tablet compatibility on Windows, as part of a three-developer team",
+            "highlights": [
+                "Enabled doctor access to previously unavailable AED usage data",
+                "Achieved healthcare certification under strict regulations",
+                "Implemented precise screen calibration for medical accuracy"
+            ],
+            "url": null,
+            "technologies": ["C++", "Qt5", "QML", "OpenGL", "SOAP", "Windows"]
+        },
+        {
+            "name": "JavaScript Deobfuscator",
+            "startDate": "2014-12-23",
+            "endDate": "2014-12-30",
+            "description": "Created a JavaScript deobfuscator to decode mangled scripts, aiding malware researchers in analyzing obfuscated code. Built solo using JavaScript and the Esprima library, balancing correctness and expressiveness to handle diverse deobfuscation patterns without compromising accuracy. Completed in a one-week sprint, the project was later forked into JStillery, a commercial tool, extending its impact in security and code analysis.",
+            "highlights": [
+                "Enabled malware research with JS deobfuscation",
+                "Forked into JStillery commercial product",
+                "Balanced accuracy and patterns in one week"
+            ],
+            "url": "https://m1el.github.io/jsdeobfuscate/",
+            "id": "js-deobfuscator",
+            "technologies": ["JavaScript", "esprima"]
+        },
+        {
+            "id": "coccoc-browser",
+            "name": "Cốc Cốc Browser Development",
+            "startDate": "2015-08-01",
+            "endDate": "2015-10-01",
+            "description": "Enhanced Cốc Cốc, a Chromium-based web browser tailored for Vietnamese users, developed by a top Vietnamese tech company comparable to Google or Yandex. Optimized the download manager page, slashing rendering time from 800ms to 40ms, and designed a seamless settings page to improve user experience. Revamped the search engine front page, eliminating icon stutter on hover for a polished, professional look. Tackled complex Chromium build processes and advocated for UI improvements, leveraging React, Node.js, CSS, and JavaScript. Contributed front-end expertise to a team effort, delivering a faster, visually refined browser for millions of users.",
+            "highlights": [
+                "Reduced download page rendering time from 800ms to 40ms",
+                "Eliminated front page icon stutter for smoother user interaction",
+                "Navigated complex Chromium build process for successful deployment"
+            ],
+            "url": "https://coccoc.com/",
+            "technologies": ["React", "Node.js", "CSS", "JavaScript", "TypeScript", "C++", "Chromium", "Chrome DevTools"]
+        },
+        {
+            "id": "mischief-re",
+            "name": "Made with Mischief Format Reverse-Engineering",
+            "startDate": "2015-03-01",
+            "endDate": "2015-04-30",
+            "description": "Reverse-engineered the proprietary binary file format and LZMA-based compression algorithm of 'Made with Mischief,' an abandoned digital image editor, to enable data migration for users and for learnig. Employed assembly, WinDBG, and OllyDBG to dissect the undocumented format, and developed a robust process to crack the unrecognized compression algorithm. Successfully decoded the structure in a solo effort in about a month, blending low-level programming prowess with creative problem-solving to preserve user data from a defunct tool.",
+            "highlights": [
+                "Enabled data migration from an abandoned image editor",
+                "Cracked an LZMA-based compression",
+                "Reversed an undocumented binary format in solo effort"
+            ],
+            "url": "https://m1el.github.io/mischief/part-1.html",
+            "technologies": ["Assembly", "WinDBG", "OllyDBG", "Python", "LZMA"]
+        },
+        {
+            "id": "woscope",
+            "name": "Oscilloscope Visualization Algorithm",
+            "startDate": "2015-08-01",
+            "endDate": "2015-09-30",
+            "description": "Devised a custom algorithm to render pretty oscilloscope lines, blending artistic expression with high-performance audio visualization. Engineered the solution using WebGL, JavaScript, Canvas, and advanced math, overcoming challenges in balancing expressive detail with minimal overdraw for optimal speed. This innovation was adopted by three leading oscilloscope visualizers, including Dood.al, Oscilloscope Music, and Soundemote’s VST plugin, establishing it as a benchmark for aesthetic and efficient line drawing. Shared insights in a detailed blog post, amplifying its influence in the visualization community.",
+            "highlights": [
+                "Adopted by Dood.al, Oscilloscope Music, and Soundemote VST",
+                "Optimized for minimal overdraw and maximum visual impact",
+                "Fused math and WebGL for superior line rendering"
+            ],
+            "url": "https://m1el.github.io/woscope-how/",
+            "technologies": ["WebGL", "GLSL", "JavaScript", "Canvas", "Math", "C++", "VST", "openFrameworks"]
+        },
+        {
+            "id": "deal-management-sys",
+            "name": "Deal Management System",
+            "startDate": "2016-05-01",
+            "endDate": "2018-08-31",
+            "description": "Contributed to a comprehensive deal management system for a top equity investment company, serving as their in-house hub for tracking investments, running simulations, allocating funds, and ingesting external data. Developed a resilient front-end with AngularJS, React, JavaScript, and CSS, integrated with a C# and .NET backend using an event-based architecture. Led a pivotal modernization of a codebase, converting manual script includes to a webpack and Node.js-based build system in one week, cutting load times by 30% through minification, accelerating dev cycles, and eliminating cryptic AngularJS errors. Ensured robustness across massive changes and optimized module compilation, collaborating with a team of 10 developers and 4 QAs.",
+            "highlights": [
+                "Revamped 70KLoC codebase to Webpack build system in 1 week",
+                "Sped up load times by 30% with minification",
+                "Eliminated AngularJS errors and boosted dev cycle speed"
+            ],
+            "url": null,
+            "technologies": [".NET", "C#", "ASP.NET MVC", "IIS", "Webpack", "bootstrap", "Node.js", "JavaScript", "TypeScript", "AngularJS", "CSS", "React"]
+        },
+        {
+            "id": "wasm-asteroids",
+            "name": "WASM-Asteroids Game Prototype",
+            "startDate": "2017-12-04",
+            "endDate": "2017-12-27",
+            "description": "Developed WASM-Asteroids, a tech demo game prototype in Rust and WebAssembly, to demonstrate Rust’s potential in browser-based applications. Achieved smooth 60 FPS gameplay using SVG for vector rendering, crafting a playable Asteroids experience. Overcame the core challenge of implementing an event loop to seamlessly pass events between JavaScript and Rust, ensuring responsive controls. Built solo in a three-week sprint, proving efficient WASM compilation and robust interactivity.",
+            "highlights": [
+                "Delivered 60 FPS Asteroids demo with Rust and WebAssembly",
+                "Implemented event loop for JS-Rust interoperability",
+                "Showcased SVG rendering in a browser game"
+            ],
+            "url": "https://m1el.github.io/wasm-asteroids/demo/demo.html",
+            "technologies": ["Rust", "WebAssembly", "SVG", "JavaScript"]
+        },
+        {
+            "id": "travel-front-page",
+            "name": "Travel Company Front Page Enhancement",
+            "startDate": "2019-10-01",
+            "endDate": "2021-05-31",
+            "description": "Enhanced and maintained the media-rich front page of a prominent travel company’s website, delivering continuous upgrades for a seamless user experience. Integrated OAuth2 authentication for corporate clients, enriched the UI with dynamic media elements, and optimized loading times through detailed performance analysis. Diagnosed and fixed a severe bug where user input triggered a full-screen blackout, improving customer retention by 3%. Designed a high-impact button that boosted app conversion rates by 15%. Collaborated with a 7-person team, leveraging React, Next.js, Angular, SCSS, Node.js, Ruby on Rails, and OAuth2 within a Dockerized Webpack workflow, supported by Contentful and Phraseapp.",
+            "highlights": [
+                "Increased app conversion by 15% with a custom button",
+                "Identified and fixed screen-blackout bug, boosting retention by 3%",
+                "Improved webpack pipeline build times from 20 minutes to 5 minutes",
+                "Integrated OAuth2 for corporate client access"
+            ],
+            "url": null,
+            "technologies": ["React", "Next.js", "TypeScript", "Contentful", "Phraseapp", "Docker", "Angular", "SCSS", "Node.js", "Webpack", "OAuth2", "Ruby", "Rails"]
+        },
+        {
+            "id": "oculus-tls-snoop",
+            "name": "Oculus Runtime TLS Instrumentation",
+            "startDate": "2020-03-30",
+            "endDate": "2020-05-11",
+            "description": "Instrumented the Oculus runtime to extract TLS keys and intercept encrypted traffic, investigating end-user data collection by Facebook. Tackled the complex challenge of hooking the runtime by disassembling code, analyzing OpenSSL internals, and patching in-memory with Win32 API, using x86 assembly, WinDbg, and Rust to expose communications. Completed solo in six weeks, documenting the reverse-engineering process in a detailed blog post that blends security analysis with low-level expertise.",
+            "highlights": [
+                "Hooked Oculus runtime via RE and patching",
+                "Extracted TLS keys to snoop encrypted traffic",
+                "Shared insights in a blog post"
+            ],
+            "url": "https://m1el.github.io/oculus-tls-extract/",
+            "technologies": ["x86 Assembly", "WinDbg", "Rust", "C", "Reverse-Engineering", "OpenSSL", "Win32 API"]
+        },
+        {
+            "id": "illustrate-mol-web",
+            "name": "Molecule Visualizer WebGL Port",
+            "startDate": "2020-06-10",
+            "endDate": "2020-06-22",
+            "description": "Ported a Fortran-based molecule visualizer, originally developed by David S. Goodsell, to WebGL as a personal learning project, boosting rendering speed from 6 seconds per frame to a real-time 60 FPS. Adapted the legacy scientific algorithm into efficient WebGL, GLSL, and JavaScript, incorporating visual effects like ambient occlusion for enhanced realism. Completed solo in a focused two-week effort from June 10 to June 22, 2020, seamlessly bridging decades-old code with modern graphics for an interactive, high-performance visualization tool.",
+            "highlights": [
+                "Boosted rendering from 6 seconds/frame to 60 FPS (360x improvement)",
+                "Adapted Fortran algorithm to pure GLSL",
+                "Enhanced visuals with ambient occlusion"
+            ],
+            "url": "https://imlvts.github.io/illustrate-mol-web/dist/",
+            "technologies": ["WebGL", "GLSL", "JavaScript", "Fortran", "Visual Effects"]
+        },
+        {
+            "id": "beatsaber-slice-viz",
+            "name": "Beat Saber Slice Visualization Mod",
+            "startDate": "2020-12-29",
+            "endDate": "2021-03-29",
+            "description": "Created a Beat Saber mod to visualize saber swing offsets, revealing distance and direction from the center to boost player accuracy, from December 29, 2020, to March 29, 2021. Built solo with C# and Unity, crafting a concise 3D UI that seamlessly integrated into the game, adopted by professional players for precision training. Overcame the challenge of designing an intuitive, lightweight 3D interface, enhancing gameplay feedback without bloating the codebase.",
+            "highlights": [
+                "Visualized swing offsets in 3D for pro Beat Saber players",
+                "Designed lightweight 3D UI in Unity",
+                "Enhanced accuracy training with minimal code"
+            ],
+            "url": "https://github.com/m1el/BeatSaber-SliceVisualizer",
+            "technologies": ["C#", "Unity", "3D", "Game Modding"]
+        },
+        {
+            "id": "substrate-blockchain",
+            "name": "Custom Substrate Blockchain",
+            "startDate": "2021-09-01",
+            "endDate": "2022-10-31",
+            "description": "Developed a custom blockchain in Substrate for a financial platform backed by carbon offsets, exceeding expectations across a 13-month effort. Engineered a smart contract system featuring a fungible token with access control and on-chain KYC integration, overcoming Substrate’s limited monetary transaction tools and complex compliance demands. Designed the backend architecture leveraging Node.js, RabbitMQ, AWS EC2, and DynamoDB, and built a benchmarking tool that saturated the network at 800 transactions per second with one thread. Supported marketplace development with React.js, contributing to a robust, full-stack solution as part of a 4-developer, 2-QA team.",
+            "highlights": [
+                "Built token system and KYC smart contracts in Substrate",
+                "Achieved 800 tx/s with custom benchmarking tool",
+                "Designed backend architecture with Node.js and AWS"
+            ],
+            "url": null,
+            "technologies": ["Rust", "Substrate", "Node.js", "React.js", "RabbitMQ", "AWS EC2", "AWS DynamoDB", "Blockchain"]
+        },
+        {
+            "id": "refterm-hash-break",
+            "name": "Refterm Hash Weakness Analysis",
+            "startDate": "2021-10-23",
+            "endDate": "2021-10-30",
+            "description": "Challenged and exposed multiple weaknesses in a custom hash function by Casey Muratori for the refterm terminal, touted as 'strong,' from October 23 to October 30, 2021. Conducted solo research using Rust, Math, and AES, optimizing reverse AES execution to uncover vulnerabilities and generating messages with a hash value of 0x0 as a proof-of-concept. Contributed a fix to address the flaws, documenting the exploits in a blog post that blended security analysis with technical prowess in a one-week sprint.",
+            "highlights": [
+                "Reversed AES to crack refterm’s 'strong' hash",
+                "Generated 0x0 hash messages as proof-of-concept",
+                "Fixed flaws and shared via blog post"
+            ],
+            "url": "https://m1el.github.io/refterm-hash/",
+            "technologies": ["Rust", "C", "Math", "AES", "cryptography", "cryptanalysis"]
+        },
+        {
+            "id": "esp-gps-clock",
+            "name": "ESP GPS Clock",
+            "startDate": "2021-11-01",
+            "endDate": "2021-11-30",
+            "description": "Designed and built a GPS clock on the ESP platform using ESP8266 and ESP32-C3 in November 2021, marking a solo foray into embedded development with Rust. Implemented a custom async NMEA protocol parser for GPS data and a tailored MAX7219 driver, experimenting with precise timings to 'race the beam'—activating segments only during their 0.1% display window. Overcame Rust HAL limitations by fine-tuning interrupts, delivering a functional, optimized timekeeping solution through fun embedded techniques.",
+            "highlights": [
+                "Crafted async NMEA parser for GPS in Rust",
+                "'Raced the beam' with MAX7219 display using precise timing",
+                "Fixed Rust HAL interrupt issues solo"
+            ],
+            "url": null,
+            "technologies": ["Rust", "ESP8266", "ESP32-C3", "Embedded", "NMEA", "MAX7219", "RISC-V"]
+        },
+        {
+            "id": "samaras",
+            "name": "MapleStory RNG Exploit",
+            "startDate": "2022-11-01",
+            "endDate": "2022-11-17",
+            "description": "Collaborated with security researcher gamozolabs, to create a proof-of-concept exploiting a game’s weak RNG, culminating in a talk at the UA Rust conference. Developed a high-speed algorithm in Rust to reverse the RNG seed from scant output, using linear algebra over GF(2) to crack it in ~1000 CPU cycles. Navigated the challenge of working blind, deducing RNG usage through educated guesses, and delivered a robust solution with no external libraries. Informed server owners of the vulnerability, blending security research with mathematical finesse in a two-person effort.",
+            "highlights": [
+                "Cracked RNG seed in ~1000 cycles with GF(2) in Rust",
+                "Presented findings at UA Rust conference",
+                "Deduced RNG usage blind"
+            ],
+            "url": "https://github.com/m1el/samaras/",
+            "technologies": ["Rust", "Math", "Linear Algebra"]
+        },
+        {
+            "id": "fintech-services",
+            "name": "Financial Data Pipeline Modernization",
+            "startDate": "2023-08-01",
+            "endDate": "2024-09-22",
+            "description": "Modernized a 20-year-old codebase for a major financial services firm, transforming a Python 2-based system that ingested client financial data into a massive database. Led the port to Python 3, overcoming extensive library changes while preserving functionality and ensuring zero disruption for clients. Enhanced the system with new UI pages using a custom JavaScript framework and GTK-based interface, improving usability. Collaborated with a 4-person team over 13 months, blending SQL, custom protocols, and legacy tech to deliver a robust, future-ready solution.",
+            "highlights": [
+                "Ported Python 2 to Python 3 with full functionality intact",
+                "Added UI pages with custom JS and GTK frameworks",
+                "Ensured client continuity during 20-year codebase overhaul"
+            ],
+            "url": null,
+            "technologies": ["Python2", "Python3", "SQL", "JavaScript", "GTK"]
+        },
+        {
+            "id": "freeasterix-codec",
+            "name": "FreeASTERIX Codec",
+            "startDate": "2024-02-14",
+            "endDate": "2024-02-28",
+            "description": "Developed FreeASTERIX, a Rust-based codec for the ASTERIX protocol, a EUROCONTROL standard for aerospace surveillance data exchange, to enable seamless integration with aerospace systems. Reverse-engineered the specification from binary protocols, crafting a high-reliability solution with a comprehensive testing corpus and Python bindings for accessibility. Delivered the project solo in a two-week sprint, with minor documentation support from one collaborator, ensuring robust processing of critical aviation data.",
+            "highlights": [
+                "Reverse-engineered ASTERIX spec from binary protocols",
+                "Built reliable Rust codec with Python bindings",
+                "Integrated code with aerospace systems"
+            ],
+            "url": "https://github.com/freeasterix/freeasterix",
+            "technologies": ["Rust", "Python", "Embedded", "ASTERIX"]
+        }
+    ]
+}
