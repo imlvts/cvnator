@@ -87,10 +87,7 @@ rightColumn = (data) =>
         ...projects(data.projects),
     ],
 render = (data) => {
-    const prev = $('#resume');
-    if (prev && prev.parentNode) {
-        prev.parentNode.removeChild(prev);
-    }
+    const prev = $('#resume')?.remove();
     const vdom = ["main", {"id": "resume"},
         header(data.basics),
         leftColumn(data),
@@ -106,7 +103,7 @@ tailor = (data, params) => {
 
     const tailor = params.get("tailor");
 
-    if (!tailor || !has(data.tailor, tailor)) {
+    if (!tailor || !Object.hasOwn(data.tailor, tailor)) {
         return;
     }
 
