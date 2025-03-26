@@ -6,11 +6,12 @@ checkSubset = (a, b) => {
         console.error("not a subset", a, b);
     }
 },
+MONTH_FORMAT = new Intl.DateTimeFormat("en-us", {month: "long", year: "numeric"}),
 monthFmt = (str) => {
     if (!str) {
         return "Present";
     }
-    return new Intl.DateTimeFormat('en-us', {month: 'long', year: 'numeric'}).format(new Date(str)) ;
+    return MONTH_FORMAT.format(new Date(str));
 },
 CLEAN_URL_RE = new RegExp("^https?://(www\\.)?|/+$", "g"),
 cleanUrl = (url) => url.replace(CLEAN_URL_RE, ""),
@@ -33,13 +34,15 @@ renderDOM = (obj, target) => {
         } else if (type === "!fragment") {
             rest.forEach((child) => renderDOM(child, target));
         } else {
-            dom = Object.assign(document.createElement(type), attrs);
+            dom = document.createElement(type);
+            Object.keys(attrs).forEach(
+                (key) => dom.setAttribute(key, attrs[key]));
             rest.forEach((child) => renderDOM(child, dom));
         }
     } else {
         throw new Error("Cannot make dom of: " + obj);
     }
     if (dom) {
-        target.append(dom)        
+        target.append(dom);
     }
 };
