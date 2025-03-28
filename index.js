@@ -2,9 +2,10 @@
 #include "util.js"
 
 const
-header = ({ name, label }) =>
+header = ({ name, label, image }) =>
     ["header", 0,
         ["h1", 0, name],
+        // ["img", {src: image}],
         ["h2", 0, label],
     ],
 icon = (name) =>
@@ -14,13 +15,13 @@ about = ({location, email, phone, url, profiles}) =>
         ["h3", 0, "About"],
         ["dl", 0,
             location?.city && ["div", 0,
-                icon("location"), location.city],
+                icon("location"), location.city, ", ", location.region],
             email && ["div", 0,
                 icon("mail"), ["a", {href: "mailto:" + email}, email]],
             phone && ["div", 0,
-                icon("phone"), ["a", {href: "tel:" + phone}, phone]],
+                icon("phone"), ["a", {href: "tel:" + encodeURIComponent(phone)}, phone]],
             url && ["div", 0,
-                icon("globe"), ["a", {href: url}, cleanUrl(url)]],
+                icon("url"), ["a", {href: url}, cleanUrl(url)]],
             profiles && ["!fragment", 0,
                 ...profiles.map((prof) =>
                     ["div", 0,
@@ -30,16 +31,22 @@ about = ({location, email, phone, url, profiles}) =>
             ],
         ]
     ],
-skills = (skills) => null,
+skills = (skills) =>
+    ["div", {class: "skills"},
+        ["h3", 0, "Skills"],
+        ... skills.map(({name, level, keywords}) =>
+            ["div", {class: "skill"},
+                ["strong", 0, name, " (", level, "): "],
+                ...keywords.map((keyword, ii) =>
+                    ["!fragment", 0, ii > 0 && ", ", ["span", 0, keyword]])
+            ]),
+    ],
 languages = (languages) =>
     ["div", {class: "languages"},
         ["h3", 0, "Languages"],
-        ["dl", 0,
+        ["div", {class: "languages"},
             ...languages.map(({ language, fluency }) =>
-                ["!fragment", 0,
-                    ["dt", 0, language],
-                    ["dd", 0, fluency],
-                ]),
+                ["span", 0, language, ": ", fluency, ";"])
         ]
     ],
 leftColumn = (data) =>
@@ -101,14 +108,20 @@ tailor = (data, params) => {
     data.projects.sort((a, b) => -dateCmp(a.startDate, b.startDate));
     data.work.sort((a, b) => -dateCmp(a.startDate, b.startDate));
 
+    data.basics.profiles = data.basics.profiles
+        .filter((net) => net.network !== 'Discord');
+
     const tailor = params.get("tailor");
 
     if (!tailor || !Object.hasOwn(data.tailor, tailor)) {
         return;
     }
 
-    const { summary, projects } = data.tailor[tailor];
+    const { summary, projects, skills } = data.tailor[tailor];
     checkSubset(projects, data.projects.map((proj) => proj.id));
+    if (skills) {
+        data.skills = data.skills.filter((skill) => skills.includes(skill.id));
+    }
     data.basics.summary = summary;
     data.projects = data.projects.filter((proj) => projects.includes(proj.id));
 },

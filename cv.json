@@ -3,19 +3,23 @@
     "tailor": {
         "embedded": {
             "summary": "Seasoned developer with a knack for hitting the ground running, delivering optimized solutions in Rust and C for hardware-constrained systems. Excel at crafting custom drivers, parsing protocols, and fine-tuning performance. Among other things, slashing render times, racing the beam, while thriving in collaborative design discussions. Proven record across diverse area of engineering, including embedded and aerospace. Foll of passion for bridging low-level complexity and real-world reliability.",
-            "projects": ["esp-gps-clock", "freeasterix-codec", "aed-review", "oculus-tls-snoop", "mischief-re", "coccoc-browser", "refterm-hash-break", "woscope"]
+            "projects": ["esp-gps-clock", "freeasterix-codec", "aed-review", "oculus-tls-snoop", "mischief-re", "coccoc-browser", "refterm-hash-break", "woscope"],
+            "skills": ["langs", "embedded", "backend", "devops", "security", "desktop"]
         },
         "backend": {
             "summary": "Versatile backend engineer who adapts fast, diving into complex systems to deliver robust, scalable solutions. Ready to show results on day one. Specialize in modernizing legacy code, optimizing performance, and building resilient APIs with Python, Node.js, and C#. Favor pragmatic problem-solving over blame, excelling in team settings to architect and refine backend designs that power everything from financial hubs to configuration consoles.",
-            "projects": ["backup-web-console", "deal-management-sys", "travel-front-page", "fintech-services", "coccoc-browser"]
+            "projects": ["backup-web-console", "deal-management-sys", "travel-front-page", "fintech-services", "coccoc-browser"],
+            "skills": ["langs", "web", "devops", "backend"]
         },
         "fintech": {
             "summary": "Fintech-focused developer with a knack for rapid adaptation, delivering high-impact solutions like slashing treasury workflows from days to minutes, modernizing legacy financial pipelines, and boosting conversion rates by 15%. Specialize in optimizing performance, ensuring data integrity, and building tools for investment tracking and compliance. Thrive in teams, driving pragmatic fixes and design decisions across Python, C#, and Rust-powered systems for equity firms, treasuries, and client platforms.",
-            "projects": ["fintech-services", "deal-management-sys", "autozvit", "travel-front-page", "backup-web-console", "substrate-blockchain"]
+            "projects": ["fintech-services", "deal-management-sys", "autozvit", "travel-front-page", "backup-web-console", "substrate-blockchain"],
+            "skills": ["langs", "web", "devops", "backend", "blockchain", "desktop"]
         },
         "blockchain": {
             "summary": "Fintech-savvy blockchain developer with a talent for rapid adaptation, delivering secure, high-throughput solutions from the jump. Excel at crafting smart contracts, integrating KYC on-chain, and pushing performance boundaries, rooted in Rust and financial system expertise. Thrive in teams, driving design decisions to fuse blockchain innovation with practical fintech needs.",
-            "projects": ["substrate-blockchain", "fintech-services", "deal-management-sys", "autozvit", "freeasterix-codec"]
+            "projects": ["substrate-blockchain", "fintech-services", "deal-management-sys", "autozvit", "freeasterix-codec"],
+            "skills": ["langs", "web", "backend", "devops", "blockchain", "desktop"]
         }
     },
     "basics": {
@@ -24,14 +28,14 @@
         "image": "https://avatars.githubusercontent.com/u/19667888?v=4&size=256",
         "email": "igor.malovitsa@gmail.com",
         "phone": null,
-        "url": "https://imlvts.github.io/",
+        "url": "https://imlvts.github.io/cvnator/",
         "summary": "Seasoned developer with a proven track record of rapidly adapting to diverse, high-stakes projects, often delivering impactful contributions from day one. Excel at solving complex problems—whether reverse-engineering proprietary protocols, optimizing performance from seconds to milliseconds, or modernizing legacy code—while maintaining a pragmatic, solution-first mindset over finger-pointing. Thrive in collaborative environments, bringing a keen eye for design decisions and a passion for discussing trade-offs to elevate team outcomes. Demonstrated versatility across 20+ projects, spanning embedded systems, game dev, and security research, with a flair for turning chaos into clarity under tight deadlines.",
         "location": {
             "address": null,
             "postalCode": null,
             "city": "San Antonio",
             "countryCode": "US",
-            "region": "Texas"
+            "region": "TX"
         },
         "profiles": [
             {
@@ -46,7 +50,156 @@
             }
         ]
     },
-    "skills": [],
+    "skills": [
+        {
+            "id": "langs",
+            "name": "Programming Languages",
+            "level": "Expert",
+            "keywords": [
+                "Rust",
+                "JavaScript",
+                "Python",
+                "C",
+                "C#",
+                "C++",
+                "TypeScript"
+            ]
+        },
+        {
+            "id": "web",
+            "name": "Web Development",
+            "level": "Expert",
+            "keywords": [
+                "React",
+                "Next.js",
+                "AngularJS",
+                "Node.js",
+                "CSS",
+                "SCSS",
+                "WebGL",
+                "GLSL",
+                "SVG",
+                "Canvas",
+                "Webpack",
+                "REST"
+            ]
+        },
+        {
+            "id": "backend",
+            "name": "Backend Development",
+            "level": "Expert",
+            "keywords": [
+                "Python",
+                "Flask",
+                "Node.js",
+                ".NET",
+                "C#",
+                "RabbitMQ",
+                "AWS EC2/S3/DynamoDB/Lambda",
+                "SQL/SQLite/PostgreSQL",
+                "Architecture",
+                "Linux"
+            ]
+        },
+        {
+            "id": "devops",
+            "name": "Devops",
+            "level": "Senior",
+            "keywords": [
+                "AWS EC2/S3/DynamoDB/Lambda",
+                "On-Demand Scaling",
+                "Linux",
+                "Caching",
+                "Observability",
+                "Docker",
+                "Containerization",
+                "Terraform",
+                "CI/CD",
+                "GitHub Actions",
+                "TLS",
+                "eBPF"
+            ]
+        },
+        {
+            "id": "embedded",
+            "name": "Embedded Systems",
+            "level": "Intermediate",
+            "keywords": [
+                "Rust",
+                "C",
+                "ESP8266",
+                "ESP32",
+                "NMEA",
+                "MAX7219",
+                "RISC-V"
+            ]
+        },
+        {
+            "id": "graphics",
+            "name": "Graphics and Visualization",
+            "level": "Advanced",
+            "keywords": [
+                "WebGL",
+                "GLSL",
+                "OpenGL",
+                "Qt5",
+                "QML",
+                "Canvas",
+                "SVG",
+                "Visual Effects",
+                "Unity",
+                "3D"
+            ]
+        },
+        {
+            "id": "blockchain",
+            "name": "Blockchain and Cryptography",
+            "level": "Advanced",
+            "keywords": [
+                "Substrate",
+                "Rust",
+                "Blockchain",
+                "Cryptography"
+            ]
+        },
+        {
+            "id": "security",
+            "name": "Security",
+            "level": "Advanced",
+            "keywords": [
+                "Assembly",
+                "WinDbg",
+                "Reverse-Engineering",
+                "Win32 API",
+                "Math",
+                "Cryptography"
+            ]
+        },
+        {
+            "id": "gamedev",
+            "name": "Game Development",
+            "level": "Intermediate",
+            "keywords": [
+                "Unity",
+                "C#",
+                "WebAssembly",
+                "Rust",
+                "Game Modding"
+            ]
+        },
+        {
+            "id": "desktop",
+            "name": "Desktop Development",
+            "level": "Advanced",
+            "keywords": [
+                "Qt5",
+                "QML",
+                "C++",
+                "Win32 API",
+                "Windows"
+            ]
+        }
+    ],
     "work": [
         {
             "name": "WebDev freelancing",
@@ -68,8 +221,8 @@
             "name": "OTP Bank",
             "position": "Helpdesk",
             "url": "https://www.otpbank.com.ua/",
-            "startDate": "2012-03-01",
-            "endDate": "2012-08-01",
+            "startDate": "2012-03-02",
+            "endDate": "2012-08-02",
             "summary": "",
             "location": "Kharkiv, Ukraine",
             "highlights": []
@@ -78,12 +231,12 @@
             "name": "GlobalLogic",
             "position": "Full Stack Developer",
             "url": "https://www.globallogic.com/",
-            "startDate": "2013-04-01",
-            "endDate": "2015-02-01",
-            "summary": "Well known international outsourcing/oustaﬃng company",
+            "startDate": "2013-04-02",
+            "endDate": "2015-02-02",
+            "summary": "Well known international outsourcing/outstaﬃng company",
             "location": "Kharkiv, Ukraine",
             "highlights": [
-                "Web Front End development",
+                "Implemented shared visual components, saving around a month in dev time across teams",
                 "Qt UI development",
                 "Back End development"
             ]
@@ -92,14 +245,14 @@
             "name": "Cốc Cốc",
             "position": "Full Stack Developer",
             "url": "https://coccoc.com/",
-            "startDate": "2015-08-01",
-            "endDate": "2015-10-01",
+            "startDate": "2015-08-02",
+            "endDate": "2015-10-02",
             "summary": "The largest search and browser provider in Vietnam",
             "location": "Hanoi, Vietnam",
             "highlights": [
-                "Web Front End development",
-                "Qt UI development",
-                "Back End development"
+                "Improved page response time from 800ms to 40ms",
+                "Resolved an annoying visual bug on search engine front page",
+                "Able to work on a complex Chromium codebase from day one"
             ]
         },
         {
@@ -111,25 +264,28 @@
             "summary": "Well known international outsourcing/oustaﬃng company",
             "location": "San Antonio, TX",
             "highlights": [
-                "Conducted Discovery process",
-                "Interviewed about 100 people for hiring",
+                "Improved conversion rates by 15% for a travel company",
+                "By own initiative, found fixed a critical bug, improving user retention by 5%",
+                "Modernized a live Python2 codebase to Python3, saving about $0.5 million in ongoing maintenance",
+                "Made a custom benchmarking tool, saturating the backend with 800 tx/s",
+                "Revamped web development pipeline, improving loading speed by 30% and adding checks at compile time",
                 "Designed, discussed & implemented architecture for projects",
-                "By own initiative, found fixed a bug, improving user retention by 5%",
+                "Interviewed over 80 people for HR",
                 "Leading Software development teams"
             ]
         },
         {
             "name": "Out of the Box Systems",
             "position": "CTO",
-            "url": "http://obox.systems/",
-            "startDate": "2024-09-22",
+            "url": "https://obox.systems/",
+            "startDate": "2024-10-02",
             "endDate": null,
             "summary": "An outsourcing/oustaﬃng company",
             "location": "San Antonio, TX",
             "highlights": [
-                "Conducted Discovery process",
-                "Interviewed people for hiring",
-                "Designed, discussed & implemented architecture for projects"
+                "Conducted client meetings and discovery process process, attracting over 10 clinets",
+                "Designed, discussed & implemented architecture for projects",
+                "Interviewed people for HR"
             ]
         }
     ],
@@ -138,7 +294,7 @@
             "organization": "Ukrainian Rust Community",
             "position": "Cofounder, Mentor, Speaker",
             "url": "https://uarust.com/",
-            "startDate": "2021-09-01",
+            "startDate": "2021-09-02",
             "endDate": null,
             "summary": "",
             "highlights": []
@@ -150,8 +306,8 @@
             "url": "https://karazin.ua/en/",
             "area": "Experimental nuclear and plasma physics",
             "studyType": "Master",
-            "startDate": "2008-09-01",
-            "endDate": "2012-05-01",
+            "startDate": "2008-09-02",
+            "endDate": "2012-05-02",
             "score": "3.7",
             "courses": []
         }
@@ -174,7 +330,7 @@
         {
             "id": "autozvit",
             "name": "Treasury Reporting Tool",
-            "startDate": "2008-06-01",
+            "startDate": "2008-06-02",
             "endDate": "2008-08-31",
             "description": "Created a reporting tool for the Treasury of Ukraine to generate financial reports and pinpoint elusive data discrepancies, slashing a day-long manual process to 3 minutes from June to August 2008. Engineered the solution solo using Perl, dBase, and SQLite, crafting precise SQL queries to expose error sources within a CLI-driven workflow. Mastered the complexity of discrepancy detection, delivering a fast, reliable utility that transformed government data validation.",
             "highlights": [
@@ -188,8 +344,8 @@
         {
             "id": "backup-web-console",
             "name": "Backup and Recovery Web Console",
-            "startDate": "2013-04-01",
-            "endDate": "2014-05-01",
+            "startDate": "2013-04-02",
+            "endDate": "2014-05-02",
             "description": "Developed a web-based backup and recovery console for a globally recognized backup provider, replacing a legacy desktop system and eliminating client-side setup, reducing configuration time by approximately 90%. Designed a responsive, real-time UI with JavaScript, SenchaJS, CSS, and SCSS, and built a scalable Python and Flask backend with RESTful APIs. Overcame complex integration challenges by interfacing with an undocumented proprietary binary protocol and mapped intricate entity relationships to accurately display backup resource hierarchies. Delivered reusable components adopted by other teams, saving an estimated two weeks of development time. Collaborated with a team of four developers, contributing both frontend and backend expertise.",
             "highlights": [
                 "Eliminated client desktop setup, reducing configuration time by ~90%",
@@ -202,8 +358,8 @@
         {
             "id": "aed-review",
             "name": "AED Report Review Application",
-            "startDate": "2014-05-01",
-            "endDate": "2015-01-01",
+            "startDate": "2014-05-02",
+            "endDate": "2015-01-02",
             "description": "Developed a desktop/tablet application enabling doctors to access and review Automated External Defibrillator (AED) reports, providing previously unavailable usage data critical for patient care. Built the solution using Qt5, QML, and OpenGL for an optimized UI with precise screen resolution calibration, and integrated a SOAP API for secure data retrieval. Overcame challenges in securing comprehensive test data to ensure reliability and achieved healthcare certification under strict regulatory standards. Contributed across the stack, including cryptographic log certification and tablet compatibility on Windows, as part of a three-developer team",
             "highlights": [
                 "Enabled doctor access to previously unavailable AED usage data",
@@ -230,8 +386,8 @@
         {
             "id": "coccoc-browser",
             "name": "Cốc Cốc Browser Development",
-            "startDate": "2015-08-01",
-            "endDate": "2015-10-01",
+            "startDate": "2015-08-02",
+            "endDate": "2015-10-02",
             "description": "Enhanced Cốc Cốc, a Chromium-based web browser tailored for Vietnamese users, developed by a top Vietnamese tech company comparable to Google or Yandex. Optimized the download manager page, slashing rendering time from 800ms to 40ms, and designed a seamless settings page to improve user experience. Revamped the search engine front page, eliminating icon stutter on hover for a polished, professional look. Tackled complex Chromium build processes and advocated for UI improvements, leveraging React, Node.js, CSS, and JavaScript. Contributed front-end expertise to a team effort, delivering a faster, visually refined browser for millions of users.",
             "highlights": [
                 "Reduced download page rendering time from 800ms to 40ms",
@@ -244,7 +400,7 @@
         {
             "id": "mischief-re",
             "name": "Made with Mischief Format Reverse-Engineering",
-            "startDate": "2015-03-01",
+            "startDate": "2015-03-02",
             "endDate": "2015-04-30",
             "description": "Reverse-engineered the proprietary binary file format and LZMA-based compression algorithm of 'Made with Mischief,' an abandoned digital image editor, to enable data migration for users and for learnig. Employed assembly, WinDBG, and OllyDBG to dissect the undocumented format, and developed a robust process to crack the unrecognized compression algorithm. Successfully decoded the structure in a solo effort in about a month, blending low-level programming prowess with creative problem-solving to preserve user data from a defunct tool.",
             "highlights": [
@@ -258,7 +414,7 @@
         {
             "id": "woscope",
             "name": "Oscilloscope Visualization Algorithm",
-            "startDate": "2015-08-01",
+            "startDate": "2015-08-02",
             "endDate": "2015-09-30",
             "description": "Devised a custom algorithm to render pretty oscilloscope lines, blending artistic expression with high-performance audio visualization. Engineered the solution using WebGL, JavaScript, Canvas, and advanced math, overcoming challenges in balancing expressive detail with minimal overdraw for optimal speed. This innovation was adopted by three leading oscilloscope visualizers, including Dood.al, Oscilloscope Music, and Soundemote’s VST plugin, establishing it as a benchmark for aesthetic and efficient line drawing. Shared insights in a detailed blog post, amplifying its influence in the visualization community.",
             "highlights": [
@@ -272,7 +428,7 @@
         {
             "id": "deal-management-sys",
             "name": "Deal Management System",
-            "startDate": "2016-05-01",
+            "startDate": "2016-05-02",
             "endDate": "2018-08-31",
             "description": "Contributed to a comprehensive deal management system for a top equity investment company, serving as their in-house hub for tracking investments, running simulations, allocating funds, and ingesting external data. Developed a resilient front-end with AngularJS, React, JavaScript, and CSS, integrated with a C# and .NET backend using an event-based architecture. Led a pivotal modernization of a codebase, converting manual script includes to a webpack and Node.js-based build system in one week, cutting load times by 30% through minification, accelerating dev cycles, and eliminating cryptic AngularJS errors. Ensured robustness across massive changes and optimized module compilation, collaborating with a team of 10 developers and 4 QAs.",
             "highlights": [
@@ -300,9 +456,9 @@
         {
             "id": "travel-front-page",
             "name": "Travel Company Front Page Enhancement",
-            "startDate": "2019-10-01",
+            "startDate": "2019-10-02",
             "endDate": "2021-05-31",
-            "description": "Enhanced and maintained the media-rich front page of a prominent travel company’s website, delivering continuous upgrades for a seamless user experience. Integrated OAuth2 authentication for corporate clients, enriched the UI with dynamic media elements, and optimized loading times through detailed performance analysis. Diagnosed and fixed a severe bug where user input triggered a full-screen blackout, improving customer retention by 3%. Designed a high-impact button that boosted app conversion rates by 15%. Collaborated with a 7-person team, leveraging React, Next.js, Angular, SCSS, Node.js, Ruby on Rails, and OAuth2 within a Dockerized Webpack workflow, supported by Contentful and Phraseapp.",
+            "description": "Enhanced and maintained the media-rich front page of a prominent travel company’s website, delivering continuous upgrades for a seamless user experience. Integrated OAuth2 authentication for corporate clients, enriched the UI with dynamic media elements, and optimized loading times through detailed performance analysis. Diagnosed and fixed a severe bug where user input triggered a full-screen blackout, improving customer retention by 3%. Designed a high-impact button that boosted app conversion rates by 15%. Collaborated with a 7-person team, leveraging React, Next.js, Angular, SCSS, Node.js, Ruby on Rails, and OAuth2, supported by Contentful and Phraseapp.",
             "highlights": [
                 "Increased app conversion by 15% with a custom button",
                 "Identified and fixed screen-blackout bug, boosting retention by 3%",
@@ -357,7 +513,7 @@
         {
             "id": "substrate-blockchain",
             "name": "Custom Substrate Blockchain",
-            "startDate": "2021-09-01",
+            "startDate": "2021-09-02",
             "endDate": "2022-10-31",
             "description": "Developed a custom blockchain in Substrate for a financial platform backed by carbon offsets, exceeding expectations across a 13-month effort. Engineered a smart contract system featuring a fungible token with access control and on-chain KYC integration, overcoming Substrate’s limited monetary transaction tools and complex compliance demands. Designed the backend architecture leveraging Node.js, RabbitMQ, AWS EC2, and DynamoDB, and built a benchmarking tool that saturated the network at 800 transactions per second with one thread. Supported marketplace development with React.js, contributing to a robust, full-stack solution as part of a 4-developer, 2-QA team.",
             "highlights": [
@@ -373,7 +529,7 @@
             "name": "Refterm Hash Weakness Analysis",
             "startDate": "2021-10-23",
             "endDate": "2021-10-30",
-            "description": "Challenged and exposed multiple weaknesses in a custom hash function by Casey Muratori for the refterm terminal, touted as 'strong,' from October 23 to October 30, 2021. Conducted solo research using Rust, Math, and AES, optimizing reverse AES execution to uncover vulnerabilities and generating messages with a hash value of 0x0 as a proof-of-concept. Contributed a fix to address the flaws, documenting the exploits in a blog post that blended security analysis with technical prowess in a one-week sprint.",
+            "description": "Challenged and exposed multiple weaknesses in a custom hash function by Casey Muratori for the refterm terminal, touted as 'strong'. Conducted solo research using Rust, Math, and AES, optimizing reverse AES execution to uncover vulnerabilities and generating messages with a hash value of 0x0 as a proof-of-concept. Contributed a fix to address the flaws, documenting the exploits in a blog post that blended security analysis with technical prowess in a one-week sprint.",
             "highlights": [
                 "Reversed AES to crack refterm’s 'strong' hash",
                 "Generated 0x0 hash messages as proof-of-concept",
@@ -385,7 +541,7 @@
         {
             "id": "esp-gps-clock",
             "name": "ESP GPS Clock",
-            "startDate": "2021-11-01",
+            "startDate": "2021-11-02",
             "endDate": "2021-11-30",
             "description": "Designed and built a GPS clock on the ESP platform using ESP8266 and ESP32-C3 in November 2021, marking a solo foray into embedded development with Rust. Implemented a custom async NMEA protocol parser for GPS data and a tailored MAX7219 driver, experimenting with precise timings to 'race the beam'—activating segments only during their 0.1% display window. Overcame Rust HAL limitations by fine-tuning interrupts, delivering a functional, optimized timekeeping solution through fun embedded techniques.",
             "highlights": [
@@ -399,7 +555,7 @@
         {
             "id": "samaras",
             "name": "MapleStory RNG Exploit",
-            "startDate": "2022-11-01",
+            "startDate": "2022-11-02",
             "endDate": "2022-11-17",
             "description": "Collaborated with security researcher gamozolabs, to create a proof-of-concept exploiting a game’s weak RNG, culminating in a talk at the UA Rust conference. Developed a high-speed algorithm in Rust to reverse the RNG seed from scant output, using linear algebra over GF(2) to crack it in ~1000 CPU cycles. Navigated the challenge of working blind, deducing RNG usage through educated guesses, and delivered a robust solution with no external libraries. Informed server owners of the vulnerability, blending security research with mathematical finesse in a two-person effort.",
             "highlights": [
@@ -417,7 +573,7 @@
             "endDate": "2024-09-22",
             "description": "Modernized a 20-year-old codebase for a major financial services firm, transforming a Python 2-based system that ingested client financial data into a massive database. Led the port to Python 3, overcoming extensive library changes while preserving functionality and ensuring zero disruption for clients. Enhanced the system with new UI pages using a custom JavaScript framework and GTK-based interface, improving usability. Collaborated with a 4-person team over 13 months, blending SQL, custom protocols, and legacy tech to deliver a robust, future-ready solution.",
             "highlights": [
-                "Ported Python 2 to Python 3 with full functionality intact",
+                "Modernized a live Python2 codebase to Python3, saving about $0.5 million in maintenance",
                 "Added UI pages with custom JS and GTK frameworks",
                 "Ensured client continuity during 20-year codebase overhaul"
             ],
