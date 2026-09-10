@@ -46,7 +46,7 @@ languages = (languages) =>
         ["h3", 0, "Languages"],
         ["div", {class: "languages"},
             ...languages.map(({ language, fluency }) =>
-                ["span", 0, language, ": ", fluency, ";"])
+                ["span", 0, language, ": ", fluency, "; "])
         ]
     ],
 leftColumn = (data) =>
@@ -84,14 +84,22 @@ projects = (projects) => projects.map((proj) =>
             ...proj.technologies.map((tech, ii) =>
                 ["!fragment", 0, ii > 0 && ", ", ["span", 0, tech]])],
     ]),
+education = (edus) => edus.map((edu) =>
+    ["div", 0,
+        ["a", {href: edu.url}, edu.institution],
+        dateRange(edu.startDate, edu.endDate),
+        edu.studyType, " in ", edu.area,
+    ]),
 rightColumn = (data) =>
     ["div", {class: "rightColumn"},
         ["h3", 0, "Summary"],
         ["p", 0, data.basics.summary],
         ["h3", 0, "Experience"],
         ...jobs(data.work),
-        ["h3", 0, "Past projects"],
+        ["h3", 0, "Project highlights"],
         ...projects(data.projects),
+        ["h3", 0, "Education"],
+        ...education(data.education),
     ],
 render = (data) => {
     const prev = $('#resume')?.remove();
