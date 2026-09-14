@@ -107,6 +107,7 @@ rightColumn = (data) =>
 render = (data) => {
     const prev = $('#resume')?.remove();
     const vdom = ["main", {"id": "resume"},
+        filterTailor(Object.keys(data.tailor)),
         header(data.basics),
         leftColumn(data),
         rightColumn(data),
@@ -123,13 +124,17 @@ tailor = (data, params) => {
         .filter((net) => net.network !== 'Discord');
 
     const tailor = params.get("tailor");
+    DEFAULTS.tech = "";
 
     if (!tailor || !Object.hasOwn(data.tailor, tailor)) {
         return;
     }
 
     const { summary, projects, skills, tech } = data.tailor[tailor];
-    checkSubset(projects, data.projects.map((proj) => proj.id));
+    if (projects) {
+        checkSubset(projects, data.projects.map((proj) => proj.id));
+        data.projects = data.projects.filter((proj) => projects.includes(proj.id));
+    }
     if (skills) {
         data.skills = data.skills.filter((skill) => skills.includes(skill.id));
     }
@@ -139,14 +144,14 @@ tailor = (data, params) => {
         DEFAULTS.tech = tech;
     }
     data.basics.summary = summary;
-    data.projects = data.projects.filter((proj) => projects.includes(proj.id));
 },
 main = () => {
     const data = JSON.parse($("#data").textContent);
     const params = getParams();
     tailor(data, params);
     render(data);
-    initFilters();
+    bindFilters();
 };
 
 main();
+initFilters();

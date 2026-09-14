@@ -3,7 +3,6 @@
     "tailor": {
         "cto": {
           "summary": "Experienced leader, and technical officer with a background in review, validation, and governance of emerging technologies. Excels at leading teams of 2-20+ staff, connecting with clients, and coordinating with leadership to move forward the technically driven mission components. Proven track record of working with customers, diverse sets of stakeholders, and deployment of new validated feature changes in a multi-customer environment.",
-          "projects": ["continous-development-oversight", "fintech-services"],
           "skills":["business", "devops", "llm", "security", "langs"]
         },
         "embedded": {
@@ -22,7 +21,7 @@
             "skills": ["langs", "web", "devops", "backend", "llm"]
         },
         "fintech": {
-            "summary": "Fintech-focused developer with a knack for rapid adaptation, delivering high-impact solutions like slashing treasury workflows 1440%, modernizing legacy financial pipelines, and boosting conversion rates by 15%. Specialize in optimizing performance, ensuring data integrity, and building tools for investment tracking and compliance. Thrive in teams, driving pragmatic fixes and design decisions across Python, C#, and Rust-powered systems for equity firms, treasuries, and client platforms.",
+            "summary": "Fintech-focused developer with a knack for rapid adaptation, delivering high-impact solutions like slashing treasury workflows, modernizing legacy financial pipelines, and boosting conversion rates by 15%. Specialize in optimizing performance, ensuring data integrity, and building tools for investment tracking and compliance. Thrive in teams, driving pragmatic fixes and design decisions across Python, C#, and Rust-powered systems for equity firms, treasuries, and client platforms.",
             "projects": ["fintech-services", "deal-management-sys", "autozvit", "travel-front-page", "backup-web-console", "substrate-blockchain"],
             "skills": ["langs", "web", "devops", "backend", "blockchain", "desktop", "llm"]
         },
@@ -96,7 +95,7 @@
         },
         {
             "id": "rust",
-            "name": "Rust lang",
+            "name": "Rust",
             "level": "Expert",
             "keywords": [
                 "data structures",
@@ -275,22 +274,12 @@
             ]
         },
         {
-            "name": "OTP Bank",
-            "position": "Helpdesk",
-            "url": "https://www.otpbank.com.ua/",
-            "startDate": "2012-03-02",
-            "endDate": "2012-08-02",
-            "summary": "",
-            "location": "Kharkiv, Ukraine",
-            "highlights": []
-        },
-        {
             "name": "GlobalLogic",
             "position": "Full Stack Developer",
             "url": "https://www.globallogic.com/",
             "startDate": "2013-04-02",
             "endDate": "2015-02-02",
-            "summary": "Well known international outsourcing/outstaﬃng company",
+            "summary": "Well known international outsourcing/outstaffing company",
             "location": "Kharkiv, Ukraine",
             "highlights": [
                 "Implemented shared visual components, saving around a month in dev time across teams",
@@ -318,7 +307,7 @@
             "url": "https://www.dataart.com/",
             "startDate": "2016-04-16",
             "endDate": "2024-09-21",
-            "summary": "Well known international outsourcing/outstaﬃng company",
+            "summary": "Well known international outsourcing/outstaffing company",
             "location": "San Antonio, TX",
             "highlights": [
                 "Improved conversion rates by 15% for a travel company",
@@ -350,11 +339,11 @@
             "position": "CTO",
             "url": "https://obox.systems/",
             "startDate": "2024-10-02",
-            "endDate": "2026-02-01",
-            "summary": "An outsourcing/outstaﬃng company",
+            "endDate": "2026-01-30",
+            "summary": "An outsourcing/outstaffing company",
             "location": "Austin, TX",
             "highlights": [
-                "Conducted client meetings and discovery process process, converting over 10 prospective clients",
+                "Conducted client meetings and discovery process, converting over 10 prospective clients",
                 "Pitched and evaluated stakeholder requests for tradesoffs and architecture implementations",
                 "Designed, discussed & implemented continuous integration architecture for projects",
                 "Interviewed technical staff candidates for HR, and led the implementation team of 20+ staff in continuous integration rounds"
@@ -366,7 +355,7 @@
             "url": "https://singularitynet.io/",
             "startDate": "2025-04-01",
             "endDate": null,
-            "summary": "",
+            "summary": "Research-driven foundation building decentralized AI infrastructure (OpenCog Hyperon, AIRIS). Responsible for the storage architecture and evaluation layer of MORK/PathMap, a trie-based symbolic AI database implementing the paper “Triemaps that Match”. Designed the Arena Compact Trie (ACT), a disk-based, memory-mapped trie format that deduplicates branches and minimizes pointer overhead, taking the system from in-memory experiments on ~100GB to research workloads of ~4TB while cutting RAM requirements ~100x.",
             "location": "Austin, TX",
             "highlights": [
                 "Implemented a custom storage system for a graph database",
@@ -405,7 +394,7 @@
             "institution": "V. N. Karazin Kharkiv National University",
             "url": "https://karazin.ua/en/",
             "area": "Experimental nuclear and plasma physics",
-            "studyType": "Masters degree",
+            "studyType": "Master's degree",
             "startDate": "2008-09-02",
             "endDate": "2012-05-02",
             "score": "3.7",
@@ -699,15 +688,30 @@
             "name": "PathMap/MORK",
             "startDate": "2025-04-01",
             "endDate": null,
-            "description": "The MORK project is based on the paper “Triemaps that Match”. It is implemented in Rust for performance reasons.",
+            "description": "MORK/PathMap is a symbolic AI database for OpenCog Hyperon, implementing the paper “Triemaps that Match”, where tries serve as both data representation and computation model. The original in-memory implementation limited it to small experiments. Owned the storage architecture and evaluation layer in Rust: designed the Arena Compact Trie (ACT), a disk-based format that deduplicates branches and minimizes pointer chasing, paired with memory-mapped I/O so multi-terabyte datasets can be traversed without loading into RAM.",
             "highlights": [
-                "Implemented a custom storage system (ArenaCompactTree) for a graph database, increasing the possible dataset size from 100GB to 20TB",
+                "Designed the Arena Compact Tree (ACT), a memory-mapped disk storage format, increasing the possible dataset size from ~100GB to ~4TB while cutting RAM requirements ~100x",
                 "Formalized (Lean) and verified (proofs & fuzzing) the validity of a trie implementation, improving robustness of the system",
                 "Made a custom fuzzer for Lean/Rust model validation",
                 "Created GitHub CI actions to fuzz-validate every pull request, increasing the certainty nothing was broken"
             ],
             "url": "https://github.com/Adam-Vandervorst/PathMap",
             "technologies": ["Rust", "Lean", "GitHub Actions", "CI", "Python"]
+        },
+        {
+            "id": "nemotron-asr-cpp",
+            "name": "Nemotron ASR GGML Port",
+            "startDate": "2026-01-24",
+            "endDate": "2026-07-17",
+            "description": "Rewrote NVIDIA’s Nemotron streaming speech recognition model (0.6B parameters, NeMo/PyTorch) in C++ on top of ggml, producing a fast-loading, low-dependency, real-time transcription engine with no Python runtime. Ported the audio preprocessor, Conformer encoder, and transducer decoder, verifying every layer against the reference implementation, then added chunked streaming with configurable latency, CUDA/Metal/WebGPU backends, Q8_0/Q4_0 quantization, a multi-client streaming server, and optional speaker diarization. Published converted and quantized weights on Hugging Face.",
+            "highlights": [
+                "Ported a 0.6B-parameter streaming ASR model from PyTorch to C++ and ggml, removing the Python runtime dependency",
+                "Implemented chunked streaming with configurable 80ms–1.12s latency, enabling transcription of unbounded audio streams",
+                "Added CUDA, Metal, and WebGPU backends plus Q8_0/Q4_0 quantization; published converted weights on Hugging Face",
+                "Built a multi-stream TCP/Unix-socket server and a speaker diarization pipeline (VAD, speaker embeddings, clustering)"
+            ],
+            "url": "https://github.com/m1el/nemotron-asr.cpp",
+            "technologies": ["C++", "ggml", "CUDA", "Metal", "WebGPU", "Python", "PyTorch", "Speech Recognition", "ML inference", "Quantization"]
         }
     ]
 }

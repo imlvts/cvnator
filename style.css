@@ -20,6 +20,8 @@ h3 > button {
 h3 > div[popover] {
     inset: auto;
     position-area: bottom;
+}
+div[popover] {
     font-size: 1rem;
     font-weight: normal;
     padding: 8px 12px;
@@ -62,4 +64,16 @@ section[hidden] {
 }
 .filter-note {
     font-style: italic;
+}
+@media print {
+    h3 > button {
+        all: unset;
+        margin-left: 10px;
+        font-size: 1rem;
+        font-weight: normal;
+        font-style: italic;
+    }
+    [popover] {
+        display: none !important;
+    }
 }

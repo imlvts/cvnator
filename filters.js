@@ -5,7 +5,7 @@ const
 YEAR_OPTIONS = [0, 1, 2, 3, 5, 10], // 0 = all time
 // Filter values used when the query string does not mention the key.
 // A value equal to the default is dropped from the query string.
-DEFAULTS = {jobYears: 5, projectYears: 0, tech: ""}, // tailor may override tech
+DEFAULTS = {jobYears: 5, projectYears: 0, tech: "", tailor: ""}, // tailor may override tech
 // Technologies offered in the project filter; matched against each
 // the `technologies` list of each project after normalisation (see techKey).
 TECH_OPTIONS = [
@@ -66,6 +66,13 @@ endedWithin = (end, years) => {
     cutoff.setFullYear(cutoff.getFullYear() - years);
     return new Date(end) >= cutoff;
 },
+// hidden popover toggled with Alt+T; changing it re-renders the page
+filterTailor = (tailors) => ["div", {popover: "", id: "tailor-filter"},
+    ["label", 0, "Tailor for ",
+        ["select", {"data-filter": "tailor"},
+            ["option", {value: ""}, "nobody"],
+            ...tailors.map((name) => ["option", {value: name}, name])]]
+],
 projectFilterNote = () => ["p", {id: "project-filter-note", class: "filter-note"}],
 techMatches = (keys, tech) =>
     tech === "" || keys.split("|").includes(techKey(tech)),
@@ -106,9 +113,25 @@ applyFilters = (params) => {
     $("#project-filter-label").textContent = yearsLabel(projectYears)
         + (tech ? ", " + tech : "");
 },
-initFilters = () => {
+// per-render: bind the selects and apply the query to the fresh DOM
+bindFilters = () => {
     document.querySelectorAll("select[data-filter]").forEach((el) =>
-        el.addEventListener("change", () => setParam(el.dataset.filter, el.value)));
-    addEventListener("popstate", () => applyFilters(getParams()));
+        el.addEventListener("change", () => {
+            setParam(el.dataset.filter, el.value);
+            if (el.dataset.filter === "tailor") {
+                main();
+                $("#tailor-filter").showPopover();
+            }
+        }));
     applyFilters(getParams());
+},
+// once: react to history navigation and the secret tailor shortcut
+initFilters = () => {
+    addEventListener("popstate", main);
+    addEventListener("keydown", (ev) => {
+        if (ev.altKey && ev.code === "KeyT") {
+            ev.preventDefault();
+            $("#tailor-filter").togglePopover();
+        }
+    });
 };
