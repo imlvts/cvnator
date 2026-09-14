@@ -18,8 +18,14 @@ h3 > button {
     margin-left: 10px;
 }
 h3 > div[popover] {
-  inset: auto;
-  position-area: bottom;
+    inset: auto;
+    position-area: bottom;
+    font-size: 1rem;
+    font-weight: normal;
+    padding: 8px 12px;
+    border: 1px solid #000;
+    box-shadow: 4px 4px 0 #000;
+    & label { white-space: nowrap; }
 }
 .icon {
     box-sizing: border-box;
@@ -50,4 +56,10 @@ h3 > div[popover] {
 }
 .icon.LinkedIn {
 
+}
+section[hidden] {
+    display: none;
+}
+.filter-note {
+    font-style: italic;
 }

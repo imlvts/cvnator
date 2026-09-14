@@ -61,7 +61,7 @@ dateRange = (start, end) =>
         monthFmt(start), "—", monthFmt(end)
     ],
 jobs = (jobs) => jobs.map((job, idx) =>
-    ["section", {class: "job", id: `job-idx-${idx}`},
+    ["section", {class: "job", id: `job-idx-${idx}`, "data-end": job.endDate ?? ""},
         ["h4", 0,
             ["span", 0, job.position],
             " at ",
@@ -73,7 +73,8 @@ jobs = (jobs) => jobs.map((job, idx) =>
             ...job.highlights.map((hl) => ["li", 0, hl])],
     ]),
 projects = (projects) => projects.map((proj, idx) =>
-    ["section", {class: "project", id: `project-idx-${idx}`},
+    ["section", {class: "project", id: `project-idx-${idx}`,
+            "data-end": proj.endDate ?? "", "data-tech": techKeys(proj.technologies)},
         ["h4", {id: proj.id}, proj.name],
         dateRange(proj.startDate, proj.endDate),
         proj.url && ["a", {href: proj.url}, cleanUrl(proj.url)],
@@ -98,6 +99,7 @@ rightColumn = (data) =>
         ["h3", 0, "Experience", filterJobs()],
         ...jobs(data.work),
         ["h3", 0, "Project highlights", filterProjects()],
+        projectFilterNote(),
         ...projects(data.projects),
         ["h3", 0, "Education"],
         ...education(data.education),
@@ -126,19 +128,25 @@ tailor = (data, params) => {
         return;
     }
 
-    const { summary, projects, skills } = data.tailor[tailor];
+    const { summary, projects, skills, tech } = data.tailor[tailor];
     checkSubset(projects, data.projects.map((proj) => proj.id));
     if (skills) {
         data.skills = data.skills.filter((skill) => skills.includes(skill.id));
+    }
+    if (tech) {
+        // optional default for the project technology filter
+        checkSubset([tech], TECH_OPTIONS);
+        DEFAULTS.tech = tech;
     }
     data.basics.summary = summary;
     data.projects = data.projects.filter((proj) => projects.includes(proj.id));
 },
 main = () => {
     const data = JSON.parse($("#data").textContent);
-    const params = new URLSearchParams(location.search);
+    const params = getParams();
     tailor(data, params);
     render(data);
+    initFilters();
 };
 
 main();
