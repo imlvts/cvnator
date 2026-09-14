@@ -1,5 +1,6 @@
 "use strict";
 #include "util.js"
+#include "filters.js"
 
 const
 header = ({ name, label, image }) =>
@@ -59,8 +60,8 @@ dateRange = (start, end) =>
     ["div", {class: "date-range"},
         monthFmt(start), "—", monthFmt(end)
     ],
-jobs = (jobs) => jobs.map((job) =>
-    ["section", {class: "job"},
+jobs = (jobs) => jobs.map((job, idx) =>
+    ["section", {class: "job", id: `job-idx-${idx}`},
         ["h4", 0,
             ["span", 0, job.position],
             " at ",
@@ -71,8 +72,8 @@ jobs = (jobs) => jobs.map((job) =>
         ["ul", {class: "highlights"},
             ...job.highlights.map((hl) => ["li", 0, hl])],
     ]),
-projects = (projects) => projects.map((proj) =>
-    ["section", {class: "project"},
+projects = (projects) => projects.map((proj, idx) =>
+    ["section", {class: "project", id: `project-idx-${idx}`},
         ["h4", {id: proj.id}, proj.name],
         dateRange(proj.startDate, proj.endDate),
         proj.url && ["a", {href: proj.url}, cleanUrl(proj.url)],
@@ -94,9 +95,9 @@ rightColumn = (data) =>
     ["div", {class: "rightColumn"},
         ["h3", 0, "Summary"],
         ["p", 0, data.basics.summary],
-        ["h3", 0, "Experience"],
+        ["h3", 0, "Experience", filterJobs()],
         ...jobs(data.work),
-        ["h3", 0, "Project highlights"],
+        ["h3", 0, "Project highlights", filterProjects()],
         ...projects(data.projects),
         ["h3", 0, "Education"],
         ...education(data.education),

@@ -1,40 +1,45 @@
 {
     "__comment": "yes I'm tailoring my CV to different groups. boo hoo.",
     "tailor": {
+        "cto": {
+          "summary": "Experienced leader, and technical officer with a background in review, validation, and governance of emerging technologies. Excels at leading teams of 2-20+ staff, connecting with clients, and coordinating with leadership to move forward the technically driven mission components. Proven track record of working with customers, diverse sets of stakeholders, and deployment of new validated feature changes in a multi-customer environment.",
+          "projects": ["continous-development-oversight", "fintech-services"],
+          "skills":["business", "devops", "llm", "security", "langs"]
+        },
         "embedded": {
-            "summary": "Seasoned developer with a knack for hitting the ground running, delivering optimized solutions in Rust and C for hardware-constrained systems. Excel at crafting custom drivers, parsing protocols, and fine-tuning performance. Among other things, slashing render times, racing the beam, while thriving in collaborative design discussions. Proven record across diverse area of engineering, including embedded and aerospace. Foll of passion for bridging low-level complexity and real-world reliability.",
+            "summary": "Seasoned developer with a knack for hitting the ground running, delivering optimized solutions in Rust and C for hardware-constrained systems. Excel at crafting custom drivers, parsing protocols, and fine-tuning performance. Among other things, slashing render times, racing the beam, while thriving in collaborative design discussions. Proven record across diverse areas of engineering, including embedded and aerospace. Full of passion for bridging low-level complexity and real-world reliability.",
             "projects": ["esp-gps-clock", "freeasterix-codec", "aed-review", "oculus-tls-snoop", "mischief-re", "coccoc-browser", "refterm-hash-break", "woscope"],
             "skills": ["langs", "embedded", "backend", "devops", "security", "desktop"]
         },
         "gamedev": {
-            "summary": "Seasoned developer with a knack for hitting the ground running, delivering optimized solutions in Rust and C for hardware-constrained systems. Excel at crafting custom drivers, parsing protocols, and fine-tuning performance. Among other things, slashing render times, racing the beam, while thriving in collaborative design discussions. Proven record across diverse area of engineering, including embedded and aerospace. Foll of passion for bridging low-level complexity and real-world reliability.",
+            "summary": "Seasoned developer with a knack for hitting the ground running, delivering optimized solutions in Rust and C for hardware-constrained systems such as microprocessors and VR. Excel at crafting custom drivers, parsing protocols, and fine-tuning performance. Among other things, slashing render times, racing the beam, while thriving in collaborative design discussions. Proven record across diverse areas of engineering, including embedded and aerospace. Full of passion for bridging low-level complexity and real-world reliability.",
             "projects": ["aed-review", "oculus-tls-snoop", "beatsaber-slice-viz", "illustrate-mol-web", "wasm-asteroids", "woscope"],
             "skills": ["langs", "embedded", "backend", "gamedev", "devops", "desktop"]
         },
         "backend": {
             "summary": "Versatile backend engineer who adapts fast, diving into complex systems to deliver robust, scalable solutions. Ready to show results on day one. Specialize in modernizing legacy code, optimizing performance, and building resilient APIs with Python, Node.js, and C#. Favor pragmatic problem-solving over blame, excelling in team settings to architect and refine backend designs that power everything from financial hubs to configuration consoles.",
             "projects": ["backup-web-console", "deal-management-sys", "travel-front-page", "fintech-services", "coccoc-browser"],
-            "skills": ["langs", "web", "devops", "backend"]
+            "skills": ["langs", "web", "devops", "backend", "llm"]
         },
         "fintech": {
-            "summary": "Fintech-focused developer with a knack for rapid adaptation, delivering high-impact solutions like slashing treasury workflows from days to minutes, modernizing legacy financial pipelines, and boosting conversion rates by 15%. Specialize in optimizing performance, ensuring data integrity, and building tools for investment tracking and compliance. Thrive in teams, driving pragmatic fixes and design decisions across Python, C#, and Rust-powered systems for equity firms, treasuries, and client platforms.",
+            "summary": "Fintech-focused developer with a knack for rapid adaptation, delivering high-impact solutions like slashing treasury workflows 1440%, modernizing legacy financial pipelines, and boosting conversion rates by 15%. Specialize in optimizing performance, ensuring data integrity, and building tools for investment tracking and compliance. Thrive in teams, driving pragmatic fixes and design decisions across Python, C#, and Rust-powered systems for equity firms, treasuries, and client platforms.",
             "projects": ["fintech-services", "deal-management-sys", "autozvit", "travel-front-page", "backup-web-console", "substrate-blockchain"],
-            "skills": ["langs", "web", "devops", "backend", "blockchain", "desktop"]
+            "skills": ["langs", "web", "devops", "backend", "blockchain", "desktop", "llm"]
         },
         "rucppy": {
-            "summary": "Seasoned developer and mentor. Proven track record of rapidly adapting to diverse, high-stakes projects, often delivering impactful contributions from day one. Excel at solving complex problems—whether reverse-engineering proprietary protocols, optimizing performance from seconds to milliseconds, or modernizing legacy code—while maintaining a pragmatic, solution-first mindset over finger-pointing. Thrive in collaborative environments, bringing a keen eye for design decisions and a passion for discussing trade-offs to elevate team outcomes. Demonstrated versatility across 20+ projects, spanning embedded systems, game dev, and security research, with a flair for turning chaos into clarity under tight deadlines.",
+            "summary": "Seasoned developer and mentor. Proven track record of rapidly adapting to diverse, high-stakes projects, often delivering impactful contributions from day one. Excel at solving complex problems—whether reverse-engineering proprietary protocols, optimizing performance from seconds to milliseconds, or modernizing legacy code—while maintaining a pragmatic, solution-first mindset. Thrive in collaborative environments, bringing a keen eye for design decisions and a passion for discussing trade-offs to elevate team outcomes. Demonstrated versatility across 20+ projects, spanning embedded systems, game dev, and security research, with a flair for turning chaos into clarity under tight deadlines.",
             "projects": ["esp-gps-clock", "aed-review", "oculus-tls-snoop", "woscope", "coccoc-browser", "mischief-re", "refterm-hash-break", "freeasterix-codec", "samaras", "fintech-services"],
             "skills": ["langs", "rust", "embedded", "backend", "devops", "security", "desktop"]
         },
         "blockchain": {
-            "summary": "Fintech-savvy blockchain developer with a talent for rapid adaptation, delivering secure, high-throughput solutions from the jump. Excel at crafting smart contracts, integrating KYC on-chain, and pushing performance boundaries, rooted in Rust and financial system expertise. Thrive in teams, driving design decisions to fuse blockchain innovation with practical fintech needs.",
+            "summary": "Fintech-savvy blockchain developer with experience in rapid adaptation, and implementing improvements in secure, high-throughput data environments. Excel at crafting smart contracts, integrating KYC on-chain, and pushing performance boundaries, rooted in Rust and financial system expertise. Thrive in teams, driving design decisions to fuse blockchain innovation with practical fintech needs.",
             "projects": ["substrate-blockchain", "fintech-services", "deal-management-sys", "autozvit", "freeasterix-codec"],
-            "skills": ["langs", "web", "backend", "devops", "blockchain", "desktop"]
+            "skills": ["langs", "web", "backend", "devops", "blockchain", "desktop", "llm"]
         }
     },
     "basics": {
         "name": "Igor Malovitsa",
-        "label": "Software Engineer, Mentor, CTO",
+        "label": "CTO, Mentor, Software Engineer",
         "image": "https://avatars.githubusercontent.com/u/19667888?v=4&size=256",
         "email": "igor.malovitsa@gmail.com",
         "phone": null,
@@ -74,6 +79,19 @@
                 "C#",
                 "C++",
                 "TypeScript"
+            ]
+        },
+        {
+            "id": "business",
+            "name": "Business Operations",
+            "level": "Expert",
+            "keywords": [
+                "Risk Evaluation",
+                "Optimization",
+                "Leadership",
+                "analytics driven methodology",
+                "Stakeholder engagement",
+                "NIST & Data Privacy Standards"
             ]
         },
         {
@@ -305,7 +323,7 @@
             "highlights": [
                 "Improved conversion rates by 15% for a travel company",
                 "By own initiative, proactively fixed a critical bug, improving user retention by 5%",
-                "Modernized a live Python2 codebase to Python3, saving about $0.5 million in ongoing maintenance",
+                "Modernized a live Python2 codebase to Python3, saving about $0.5 million in annual maintenance",
                 "Made a custom benchmarking tool, saturating the backend with 800 tx/s",
                 "Revamped web development pipeline, improving loading speed by 30% and adding checks at compile time",
                 "Designed, discussed & implemented architecture for projects",
@@ -332,14 +350,14 @@
             "position": "CTO",
             "url": "https://obox.systems/",
             "startDate": "2024-10-02",
-            "endDate": "2025-04-01",
+            "endDate": "2026-02-01",
             "summary": "An outsourcing/outstaﬃng company",
             "location": "Austin, TX",
             "highlights": [
-                "Conducted client meetings and discovery process process, attracting over 10 clients",
-                "Suggested alternative solutions and discussed tradeoffs",
-                "Designed, discussed & implemented architecture for projects",
-                "Interviewed people for HR"
+                "Conducted client meetings and discovery process process, converting over 10 prospective clients",
+                "Pitched and evaluated stakeholder requests for tradesoffs and architecture implementations",
+                "Designed, discussed & implemented continuous integration architecture for projects",
+                "Interviewed technical staff candidates for HR, and led the implementation team of 20+ staff in continuous integration rounds"
             ]
         },
         {
@@ -365,7 +383,9 @@
             "summary": "",
             "location": "Austin, TX",
             "highlights": [
-                "Architecting and developing end-to end solutions"
+                "Architecting and developing end-to-end tamper resistant AI commit tracking", 
+	"Leading a responsive team of engineers and technical strategists to ensure AI code environments are bounded by up-to-date governance and industry standards.",
+"Developing cutting edge AI change&monitoring solutions", "coordinating business and technical alignment with CEO and client stakeholders."
             ]
         }
     ],
@@ -412,7 +432,7 @@
             "name": "Treasury Reporting Tool",
             "startDate": "2008-06-02",
             "endDate": "2008-08-31",
-            "description": "Created a reporting tool for the Treasury of Ukraine to generate financial reports and pinpoint elusive data discrepancies, slashing a day-long manual process to 3 minutes from June to August 2008. Engineered the solution solo using Perl, dBase, and SQLite, crafting precise SQL queries to expose error sources within a CLI-driven workflow. Mastered the complexity of discrepancy detection, delivering a fast, reliable utility that transformed government data validation.",
+            "description": "Created a reporting tool for the Treasury of Ukraine to generate financial reports and pinpoint elusive data discrepancies, slashing a day-long manual process to 3 minutes. Engineered the solution solo using Perl, dBase, and SQLite, crafting precise SQL queries to expose error sources within a CLI-driven workflow. Mastered the complexity of discrepancy detection, delivering a fast, reliable utility that transformed government data validation.",
             "highlights": [
                 "Reduced discrepancy detection from 1 day to 3 minutes",
                 "Expressed complex error detection logic in SQL",
