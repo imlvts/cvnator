@@ -19,7 +19,7 @@ h3 > button {
 }
 h3 > div[popover] {
     inset: auto;
-    position-area: bottom;
+    position-area: bottom span-right;
 }
 div[popover] {
     font-size: 1rem;
